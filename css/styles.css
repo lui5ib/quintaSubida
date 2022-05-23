@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:'Rubik', sans-serif;
+}
+
+/*Navegador-Menú*/
+.navbar {
+    color: white;
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    align-items: center;
+    height: 10vh;
+    border-bottom: solid red;
+
+}
+
+.navbar .logo {
+    width: 25px;
+    height: 25px;
+    grid-column: 2 / 3;
+}
+
+.navbar .menu {
+    grid-column: 4 / 7;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.navbar .menu li {
+    list-style: none;
+}
+
+.navbar .menu a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    /* border: 2px solid white; */
+    /* border-radius: 5px; */
+    border-bottom: 3px solid transparent;
+    transition: border .3s ease;
+
+}
+.navbar .menu a:hover {
+    border-bottom-color: red;
+}
+
+/* .navbar .menu a.active {
+    border-bottom-color: red ;
+}  */
+
+#marca {
+    font-size: 1.6em;
+    font-family: 'Shadows Into Light', cursive;
+    /* grid-column: 3 / 4; */
+    font-weight: lighter;
+    text-decoration: none;
+    color: white;
+}
+
+.navbar #marca .grid {
+    grid-column: 3 / 4;
+}
+
+.navbar .menubar {
+    display: none;
+}
+
+#singup {
+    border: 2px solid red;
+    border-radius: 5px;
+    background-color: red;
+    font-weight: 450;
+    color: white;
+    padding: .4rem;
+}
+
+#singup:hover {
+    /* font-weight: bold; */
+    border-color: white;
+}
+
+.navbar .shopping {
+    grid-column: 8 / 9;
+}
+
+/* Main*/
+.principal {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    background-image: url(/img/fondo-jordan1.png);
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-attachment: local;
+    background-size: contain;
+    /* max-width: 100%; */
+    
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+}
+
+.principal .home {
+    grid-column: 3 / span 5;
+    grid-row: 3 / span 5;
+    color: white;
+    
+}
+
+.principal .home {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.principal h2 {
+    font-size: 5rem;
+}
+
+.principal h3 {
+    font-size: 3rem;
+}
+
+.principal p {
+    font-style: italic;
+    /* font-size: 1rem; */
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.principal .btn {
+    color: white;
+    background: none;
+    font-size: 1rem;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+.principal .btn:hover {
+    background-color: red;
+    border: 2px solid white;
+    font-style: bold;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    height: auto;
+    width: 100vw;
+    border-top: solid red;
+    
+    /* padding-top: 15px; */
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* footer .footer-content #marca{
+    font-size: 1.6rem;
+    font-family: 'Shadows Into Light', cursive;
+    font-weight: lighter;
+} */
+
+
+.derechos {
+    padding-bottom: 35px;
+    color: white;
+    font-family:'Rubik', sans-serif;
+    font-weight: 100;
+}
+
+.redes {
+    list-style: none;
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    transition: color 5ms ease;
+}
+
+.redes i {
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.redes i:hover  {
+    color: red;
+}
+
+.redes li {
+    /* padding: auto; */
+}
+
+footer .footer-content h3{
+    font-family:'Rubik', sans-serif;
+    font-weight: 100;
+    font-size: 13px;
+    margin-top: auto;
+
+    
+}
