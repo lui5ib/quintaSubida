@@ -98,9 +98,13 @@ body {
 .principal {
     width: 100vw;
     height: 100vh;
-    background-color: black;
-    background-image: url(/img/fondo-jordan1.png);
-    background-position: center right;
+    background: rgb(255,30,30);
+    background: rgb(0,0,0);
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 15%, rgba(0,0,0,0.7010154403558299) 50%, rgba(0,0,0,1) 85%), url(/img/fondo_categorias_full.png);
+    /* background-color: black;
+    background-image: url(/img/fondo_categorias.jpg); */
+    background-position: center;
     background-repeat: no-repeat;
     background-attachment: local;
     background-size: contain;
@@ -115,12 +119,9 @@ body {
     grid-column: 3 / span 5;
     grid-row: 3 / span 5;
     color: white;
-    
-}
-
-.principal .home {
     font-family: 'Montserrat', sans-serif;
 }
+
 
 .principal h2 {
     font-size: 5rem;
@@ -170,12 +171,16 @@ footer {
     text-align: center;
 }
 
-/* footer .footer-content #marca{
+/* footer .footer-content h4{
     font-size: 1.6rem;
     font-family: 'Shadows Into Light', cursive;
     font-weight: lighter;
 } */
-
+/* footer .footer-content #marca {
+    font-size: 1.6rem;
+    font-family: 'Shadows Into Light', cursive;
+    font-weight: lighter;
+} */
 
 .derechos {
     padding-bottom: 35px;
@@ -204,8 +209,8 @@ footer {
 .redes i:hover  {
     color: red;
 }
-/* 
-.redes li {
+
+/* .redes li {
     /* padding: auto; 
 } */
 
@@ -214,6 +219,5 @@ footer .footer-content h3{
     font-weight: 100;
     font-size: 13px;
     margin-top: auto;
-
     
 }
