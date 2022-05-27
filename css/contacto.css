@@ -13,6 +13,9 @@ body {
 }
 
 /*Navegador-Menú*/
+/* img .logo {
+    size: 30px;
+} */
 .navbar {
     color: white;
     background-color: black;
@@ -52,7 +55,7 @@ body {
 } */
 .navbar .logo:hover {
     transform: rotate(180deg) scale(1.4);
-    transform-origin: center; 
+    transform-origin: center; */
 }
 
 .navbar .menu {
@@ -108,6 +111,7 @@ body {
     font-weight: 450;
     color: white;
     padding: .4rem;
+    transition: all 400ms ease;
 }
 
 #singup:hover {
@@ -123,32 +127,133 @@ body {
 .principal {
     width: 100vw;
     height: 100vh;
-    background-color: black;
-    background-image: url(/img/fondo-jordan1.png);
-    background-position: center right;
+    background: rgb(255,30,30);
+    /* background: rgb(0,0,0); */
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgb(0, 0, 0) 15%, rgb(0,0,0,0.8) 50%, rgb(0, 0, 0) 85%), url(/img/Deportes.jpg);
+    /* background-color: black;
+    background-image: url(/img/fondo_categorias.jpg); */
+    background-position: center;
     background-repeat: no-repeat;
     background-attachment: local;
-    background-size: contain;
+    background-size: cover;
     /* max-width: 100%; */
+
     
-    display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(8, 1fr);
+    
 }
 
-.principal .home {
+/* .principal .home {
     grid-column: 3 / span 5;
     grid-row: 3 / span 5;
     color: white;
+    font-family: 'Montserrat', sans-serif;
+} */
+
+/* Cardc */
+main .home {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    height: 100%;
+}
+
+.principal .cardc {
+    border: solid white;
+    border-width: 0.5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 430px;
+    height: 540px;
+    /* padding: 1%; */
     
 }
 
-.principal .home {
-    font-family: 'Montserrat', sans-serif;
+.cardc label {
+    padding: 10px;
+    
 }
 
-.principal h2 {
-    font-size: 5rem;
+.cardc h1 {
+    margin-bottom: 50px;
+}
+
+.cardc textarea {
+    margin-bottom: 35px;
+    width: 70%;
+    height: 50px;
+    background: none;
+    color: white;
+    border: 0.5px solid transparent;
+    transition: border 1s ease;
+}
+
+.cardc textarea:hover {
+    border: 0.5px solid red;
+}
+
+
+.cardc input {
+    width: 70%;
+    background: none;
+    color: white;
+    border: 0.5px solid transparent;
+    /* border-bottom: 3px solid transparent; */
+    transition: border 1s ease;
+    outline: 0px;
+
+}
+
+.cardc input:hover {
+    border-bottom: 3px solid red;
+}
+
+
+#form {
+    grid-column: 4/5;
+    grid-row: 2/3;
+    box-shadow: 0px 1px 10px 5px rgba(84, 84, 84, 0.644);
+    transition: all 400ms ease;
+    background-color: black;
+    border-radius: 50px;
+}
+
+.warnings {
+    text-align: center;
+    width: 200px;
+    margin: auto;
+    padding: 10px;
+    color: white;
+
+}
+
+
+/* #item2:hover {
+    box-shadow: 0px 1px 30px 10px rgba(84, 84, 84, 0.644);
+    transform: translateY(-3%);
+    border-width: 3px;
+} */
+
+
+
+main img {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    padding: 10%;
+    
+    
+
+}
+
+.principal #contacto {
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
 }
 
 .principal h3 {
@@ -157,7 +262,7 @@ body {
 
 .principal p {
     font-style: italic;
-    /* font-size: 1rem; */
+    font-size: 1rem; 
     margin-top: 15px;
     margin-bottom: 15px;
 }
@@ -168,7 +273,8 @@ body {
     font-size: 1rem;
     border: 2px solid white;
     border-radius: 5px;
-    padding: 1rem;
+    padding: 0.3rem;
+    
 }
 
 .principal .btn:hover {
@@ -195,12 +301,16 @@ footer {
     text-align: center;
 }
 
-/* footer .footer-content #marca{
+/* footer .footer-content h4{
     font-size: 1.6rem;
     font-family: 'Shadows Into Light', cursive;
     font-weight: lighter;
 } */
-
+/* footer .footer-content #marca {
+    font-size: 1.6rem;
+    font-family: 'Shadows Into Light', cursive;
+    font-weight: lighter;
+} */
 
 .derechos {
     padding-bottom: 35px;
@@ -216,7 +326,6 @@ footer {
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
-    transition: color 5ms ease;
 }
 
 .redes i {
@@ -230,14 +339,17 @@ footer {
 .redes i:hover  {
     color: red;
     transform: scale(1.2);
-    
+    /* box-shadow: 0px 1px 30px 5px rgba(84, 84, 84, 0.644); */
 }
+
+/* .redes li {
+    /* padding: auto; 
+} */
 
 footer .footer-content h3{
     font-family:'Rubik', sans-serif;
     font-weight: 100;
     font-size: 13px;
     margin-top: auto;
-
     
 }

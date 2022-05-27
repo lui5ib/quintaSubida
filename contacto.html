@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>iLoveThisGame</title>
-    <link rel="stylesheet" href="/css/empresa.css">
+    <link rel="stylesheet" href="/css/contacto.css">
     <script src="https://kit.fontawesome.com/bfe338232e.js" crossorigin="anonymous"></script>
     <link href="/your-path-to-fontawesome/css/all.css" rel="stylesheet">
     <link rel="icon" href="/img/pelota1_icono.png">
@@ -31,13 +31,18 @@
     </header>
     <main class="principal">
         <div class="home">
-            <h3><i>i Love</i></h3>
-            <h2><b>This Game</b></h2>
-            <p>Somos una empresa dedicada a la mejor experiencia de compra deportiva. <br> Seremos lideres en la comercializacion de artículos deportivos <br> empleando la tecnología de RA. <br> Un proceso simple y amigable, sumado a la garantía al cliente y la dilegencia, <br> son los pilares de nuestra empresa."</p>
-            <button class="btn">Comenzar</button>
-            <iframe width="376" height="180" src="https://www.youtube.com/embed/MMSP0kivmKQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <form class="cardc" action="" method="POST" id="form">
+                <h1 id="contacto">Contacto</h1>                
+                <label for="nombre">Nombre Completo</label>
+                <input type="text" name="nombre" id="name">                
+                <label for="correo">Correo</label>
+                <input type="email" name="correo" id="email">                
+                <label for="mensaje">Mensaje</label>
+                <textarea type="text" name="mensaje"></textarea>                
+                <input type="submit" class="btn" value="Enviar">
+                <p class="warnings" id="warnings"></p>
+            </form>
         </div>
-        
     </main>
 
     <footer>

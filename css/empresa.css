@@ -25,9 +25,34 @@ body {
 }
 
 .navbar .logo {
-    width: 25px;
-    height: 25px;
+    width: 50px;
+    height: 50px;
     grid-column: 2 / 3;
+    /* Animación descartada */
+    /* animation-name: girarderecha;
+    animation-duration: 2s;
+    animation-iteration-count: unset;
+    animation-direction: normal;
+    animation-timing-function: ease-in-out;*/ 
+    transition-duration: 2s; 
+    
+    
+}
+
+/* @keyframes girarderecha {
+    0% {
+        transform: rotate(0deg) scale(1);
+    transform-origin: center;
+    }
+
+    100% {
+        transform: rotate(180deg) scale(1.4);
+    transform-origin: center;
+    }
+} */
+.navbar .logo:hover {
+    transform: rotate(180deg) scale(1.4);
+    transform-origin: center; 
 }
 
 .navbar .menu {
@@ -113,9 +138,14 @@ body {
 
 .principal .home {
     grid-column: 3 / span 5;
-    grid-row: 3 / span 5;
+    grid-row: 2 / span 4;
     color: white;
     
+}
+
+iframe {
+    display: block;
+    margin-top: 40px;
 }
 
 .principal .home {
@@ -204,14 +234,13 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    transition: all 400ms ease;
 }
 .redes i:hover  {
     color: red;
+    transform: scale(1.2);
+    
 }
-
-/* .redes li {
-    /* padding: auto; 
-} */
 
 footer .footer-content h3{
     font-family:'Rubik', sans-serif;
